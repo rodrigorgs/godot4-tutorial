@@ -15,9 +15,10 @@ script = ExtResource( "2_ns5xy" )
 offset_right = 40.0
 offset_bottom = 23.0
 theme_override_font_sizes/font_size = 12
-text = "Veja aba Output no editor.
-Exibe mensagem quando
-o herói está pronto."
+text = "Exibe mensagem quando
+o herói está pronto
+(veja aba Output no editor)
+"
 __meta__ = {
 "_edit_use_anchors_": false
 }

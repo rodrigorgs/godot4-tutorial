@@ -1,0 +1,80 @@
+[gd_scene load_steps=6 format=3 uid="uid://ckqsixx5d6ldj"]
+
+[ext_resource type="Script" path="res://src/Cena15_Hero.gd" id="1_fon4x"]
+[ext_resource type="Texture2D" uid="uid://bya10ndctpscw" path="res://assets/rpg-urban/hero.png" id="2_g20dq"]
+[ext_resource type="Texture2D" uid="uid://ciypu6bv7axvo" path="res://assets/pixelplataformer/lock.png" id="3_njqka"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_lcba1"]
+size = Vector2(10, 14)
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_0w2eg"]
+size = Vector2(18, 18)
+
+[node name="Cena15_RigidBody" type="Node2D"]
+
+[node name="Hero" type="RigidDynamicBody2D" parent="."]
+texture_filter = 1
+position = Vector2(48, 3)
+lock_rotation = true
+script = ExtResource( "1_fon4x" )
+
+[node name="Sprite2D" type="Sprite2D" parent="Hero"]
+texture = ExtResource( "2_g20dq" )
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Hero"]
+position = Vector2(0, 1)
+shape = SubResource( "RectangleShape2D_lcba1" )
+
+[node name="Obstacle" type="StaticBody2D" parent="."]
+texture_filter = 1
+position = Vector2(48, 80)
+
+[node name="Sprite2D" type="Sprite2D" parent="Obstacle"]
+texture = ExtResource( "3_njqka" )
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Obstacle"]
+shape = SubResource( "RectangleShape2D_0w2eg" )
+
+[node name="Obstacle2" type="StaticBody2D" parent="."]
+texture_filter = 1
+position = Vector2(96, 80)
+
+[node name="Sprite2D" type="Sprite2D" parent="Obstacle2"]
+texture = ExtResource( "3_njqka" )
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Obstacle2"]
+shape = SubResource( "RectangleShape2D_0w2eg" )
+
+[node name="Label" type="Label" parent="."]
+offset_right = 40.0
+offset_bottom = 23.0
+theme_override_font_sizes/font_size = 12
+text = "Herói anda e desvia 
+(teclas direcionais)
+
+
+
+RigidDynamicBody2D está sujeito
+às forcas físicas.
+
+Ao selecionar o nó de corpo rígido,
+no inspetor podemos marcar Lock
+Rotation para impedir que o nó
+gire como resultado de colisões.
+
+A forca de gravidade sempre atua.
+Para alterar, abra as configuracões
+do projeto e altere a propriedade
+
+  Physics > 2d > Default Gravity
+
+Em jogos estilo plataforma, pode-se
+usar corpo rígido ou então usar
+o CharacterBody2D e emular
+a gravidade via código. Essa 
+segunda opcão permite movimentos
+mais controlados.
+"
+__meta__ = {
+"_edit_use_anchors_": false
+}

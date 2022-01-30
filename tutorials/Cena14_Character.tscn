@@ -4,8 +4,9 @@
 [ext_resource type="Texture2D" uid="uid://bya10ndctpscw" path="res://assets/rpg-urban/hero.png" id="2_g20dq"]
 [ext_resource type="Texture2D" uid="uid://c5g5tpgxks3c0" path="res://assets/pixelplataformer/circle.png" id="3_4s85k"]
 
-[sub_resource type="CircleShape2D" id="CircleShape2D_ttmeg"]
-radius = 7.0
+[sub_resource type="CapsuleShape2D" id="CapsuleShape2D_hxggk"]
+radius = 6.0
+height = 14.0
 
 [sub_resource type="CircleShape2D" id="CircleShape2D_6eh5i"]
 radius = 8.06226
@@ -23,7 +24,7 @@ texture = ExtResource( "2_g20dq" )
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="Hero"]
 position = Vector2(0, 1)
-shape = SubResource( "CircleShape2D_ttmeg" )
+shape = SubResource( "CapsuleShape2D_hxggk" )
 
 [node name="Obstacle" type="CharacterBody2D" parent="."]
 texture_filter = 1
@@ -39,8 +40,46 @@ shape = SubResource( "CircleShape2D_6eh5i" )
 offset_right = 40.0
 offset_bottom = 23.0
 theme_override_font_sizes/font_size = 12
-text = "Herói anda
-(teclas direcionais e Espaço)"
+text = "Herói anda e desvia 
+(teclas direcionais)
+
+
+
+CharacterBody2D é composto
+de um Sprite e de uma ou mais
+formas geométricas de colisão.
+
+No lugar de alterar sua posicão
+diretamente, alteramos a sua
+velocidade (vetor motion_velocity).
+
+Essa alteracão deve ser realizada
+em _physics_process(delta).
+
+Ao final chamamos um dos
+seguintes métodos para atualizar
+a posicão do nó:
+  
+  move_and_collide()
+  move_and_slide()  
+
+Essa movimentacão considera
+outros shapes de colisão na cena,
+de forma a impedir que eles se
+sobreponham.
+
+No move_and_collide(), o nó para
+ao encostar em outro.
+
+No move_and_slide(), ao encostar
+em outro nó, o vetor de velocidade
+é levemente girado para tentar
+contornar o obstáculo.
+
+O CharacterBody2D é bastante
+poderoso. Consulte a documentacão
+para entender as possibilidades.
+"
 __meta__ = {
 "_edit_use_anchors_": false
 }
