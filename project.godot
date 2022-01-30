@@ -11,9 +11,19 @@ config_version=5
 [application]
 
 config/name="godot4-tutorial"
+run/main_scene="res://scenes/cena_01__sprite.tscn"
 config/icon="res://icon.png"
 config/features=PackedStringArray("4.0", "Vulkan Mobile")
+
+[display]
+
+window/size/viewport_width=160
+window/size/viewport_height=90
+window/size/window_width_override=1280
+window/size/window_height_override=720
+window/stretch/mode="canvas_items"
 
 [rendering]
 
 vulkan/rendering/back_end=1
+textures/canvas_textures/default_texture_filter=0
