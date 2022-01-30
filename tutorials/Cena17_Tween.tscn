@@ -1,0 +1,20 @@
+[gd_scene load_steps=3 format=3 uid="uid://ckqsixx5d6ldj"]
+
+[ext_resource type="Script" path="res://src/Cena17_Tween.gd" id="1_u28a5"]
+[ext_resource type="Texture2D" uid="uid://bya10ndctpscw" path="res://assets/rpg-urban/hero.png" id="2_g20dq"]
+
+[node name="Cena16_Area2D" type="Node2D"]
+script = ExtResource( "1_u28a5" )
+
+[node name="Label" type="Label" parent="."]
+offset_right = 40.0
+offset_bottom = 23.0
+theme_override_font_sizes/font_size = 12
+text = "Tween: ande para os lados"
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="Sprite2D" type="Sprite2D" parent="."]
+position = Vector2(48, 59)
+texture = ExtResource( "2_g20dq" )

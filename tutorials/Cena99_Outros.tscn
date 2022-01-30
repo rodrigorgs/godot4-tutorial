@@ -1,0 +1,18 @@
+[gd_scene load_steps=2 format=3 uid="uid://ckqsixx5d6ldj"]
+
+[ext_resource type="Script" path="res://src/Cena16_Area2D.gd" id="1_72v85"]
+
+[node name="Cena16_Area2D" type="Node2D"]
+script = ExtResource( "1_72v85" )
+
+[node name="Label" type="Label" parent="."]
+offset_right = 40.0
+offset_bottom = 23.0
+theme_override_font_sizes/font_size = 12
+text = "Outras coisas interessantes:
+
+* Usar class_name para definir um tipo customizado
+* Adicionar script ao AutoLoad do Project Settings para criar um singleton"
+__meta__ = {
+"_edit_use_anchors_": false
+}
