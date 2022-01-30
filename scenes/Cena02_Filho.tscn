@@ -1,0 +1,26 @@
+[gd_scene load_steps=3 format=3 uid="uid://diqk8f61xux2r"]
+
+[ext_resource type="Texture2D" uid="uid://bya10ndctpscw" path="res://assets/rpg-urban/hero.png" id="1_wkbex"]
+[ext_resource type="Texture2D" uid="uid://c45ossybxtb1" path="res://assets/pixelplataformer/key.png" id="2_x58c8"]
+
+[node name="Cena02_Filho" type="Node2D"]
+
+[node name="Hero" type="Sprite2D" parent="."]
+texture_filter = 1
+position = Vector2(46, 72)
+texture = ExtResource( "1_wkbex" )
+
+[node name="Key" type="Sprite2D" parent="Hero"]
+position = Vector2(14, 4)
+texture = ExtResource( "2_x58c8" )
+
+[node name="Label" type="Label" parent="."]
+offset_right = 40.0
+offset_bottom = 23.0
+theme_override_font_sizes/font_size = 12
+text = "Mova o heroi no editor.
+A chave moverá junto.
+(Use a opção Play Scene)"
+__meta__ = {
+"_edit_use_anchors_": false
+}

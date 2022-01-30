@@ -1,0 +1,22 @@
+[gd_scene load_steps=3 format=3 uid="uid://dk4fns6pufy1j"]
+
+[ext_resource type="Texture2D" uid="uid://bya10ndctpscw" path="res://assets/rpg-urban/hero.png" id="1_wkbex"]
+[ext_resource type="Script" path="res://src/Cena06_Hero.gd" id="2_ka7uw"]
+
+[node name="Cena06_Export" type="Node2D"]
+
+[node name="Hero" type="Sprite2D" parent="."]
+texture_filter = 1
+position = Vector2(61, 71)
+texture = ExtResource( "1_wkbex" )
+script = ExtResource( "2_ka7uw" )
+
+[node name="Label" type="Label" parent="."]
+offset_right = 40.0
+offset_bottom = 23.0
+theme_override_font_sizes/font_size = 12
+text = "Variáveis do Hero podem
+ser alteradas no Inspector"
+__meta__ = {
+"_edit_use_anchors_": false
+}

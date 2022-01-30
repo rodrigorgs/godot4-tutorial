@@ -1,0 +1,23 @@
+[gd_scene load_steps=3 format=3 uid="uid://crcav47w7o7ij"]
+
+[ext_resource type="Texture2D" uid="uid://bya10ndctpscw" path="res://assets/rpg-urban/hero.png" id="1_wkbex"]
+[ext_resource type="Script" path="res://src/Cena04_Hero.gd" id="2_8ptd6"]
+
+[node name="Cena05_Ready" type="Node2D"]
+
+[node name="Hero" type="Sprite2D" parent="."]
+texture_filter = 1
+position = Vector2(13, 68)
+texture = ExtResource( "1_wkbex" )
+script = ExtResource( "2_8ptd6" )
+
+[node name="Label" type="Label" parent="."]
+offset_right = 40.0
+offset_bottom = 23.0
+theme_override_font_sizes/font_size = 12
+text = "A velocidade aumenta com
+o tempo
+(variável velocidade)"
+__meta__ = {
+"_edit_use_anchors_": false
+}

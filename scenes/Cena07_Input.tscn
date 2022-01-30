@@ -1,0 +1,22 @@
+[gd_scene load_steps=3 format=3 uid="uid://dk4fns6pufy1j"]
+
+[ext_resource type="Texture2D" uid="uid://bya10ndctpscw" path="res://assets/rpg-urban/hero.png" id="1_wkbex"]
+[ext_resource type="Script" path="res://scenes/Cena07_Hero.gd" id="2_85660"]
+
+[node name="Cena07_Input" type="Node2D"]
+
+[node name="Hero" type="Sprite2D" parent="."]
+texture_filter = 1
+position = Vector2(61, 71)
+texture = ExtResource( "1_wkbex" )
+script = ExtResource( "2_85660" )
+
+[node name="Label" type="Label" parent="."]
+offset_right = 40.0
+offset_bottom = 23.0
+theme_override_font_sizes/font_size = 12
+text = "Herói anda
+(teclas direcionais e Espaço)"
+__meta__ = {
+"_edit_use_anchors_": false
+}
