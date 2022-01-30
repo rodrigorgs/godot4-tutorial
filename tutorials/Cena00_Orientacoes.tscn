@@ -5,7 +5,10 @@
 [node name="Label" type="Label" parent="."]
 offset_right = 40.0
 offset_bottom = 23.0
-text = "Primeiro configuramos o projeto, no menu
+text = "Abra os tutoriais em res://tutorials
+Use o comando Play Scene para rodar o tutorial aberto
+
+Primeiro configuramos o projeto, no menu
 Project > Configure Project...
 
 Neste projeto usamos as seguintes
