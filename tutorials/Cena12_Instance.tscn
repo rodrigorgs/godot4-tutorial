@@ -1,0 +1,80 @@
+[gd_scene load_steps=3 format=3 uid="uid://crcav47w7o7ij"]
+
+[ext_resource type="PackedScene" uid="uid://cnj6b7st1i0yn" path="res://scenes/Cena12_Key.tscn" id="1_8in1p"]
+[ext_resource type="Script" path="res://src/Cena12_Instance.gd" id="1_rhpyn"]
+
+[node name="Cena12_Instance" type="Node2D"]
+script = ExtResource( "1_rhpyn" )
+
+[node name="Label" type="Label" parent="."]
+offset_right = 40.0
+offset_bottom = 23.0
+theme_override_font_sizes/font_size = 12
+text = "Instâncias da cena Key
+
+
+
+
+Neste exemplo, criamos
+uma cena com apenas um
+nó, a raiz da cena, do tipo 
+Sprite.
+
+Configuramos o sprite para
+usar a imagem da chave e
+criamos um script de rotacão,
+com velocidade configurável
+pelo editor.
+
+No editor da cena, ao lado
+do nó instanciado aparece
+um ícone de claquete, que,
+se clicado, faz com que a
+cena seja aberta no editor.
+
+Usamos o comando
+Instantiate Child Node
+(ícone de uma corrente)
+para criar várias instâncias
+da chave.
+
+Para cada instância
+escolhemos um valor
+diferente para a
+velocidade.
+
+Isso é bom porque, se
+precisarmos fazer alguma
+mudanca que se aplique a
+todas as chaves (ex.: mudar
+a imagem, alterar o script),
+basta alterar a cena da chave.
+
+Ao clicar com o botão direito
+do mouse em um nó (na
+aba Scene), há algumas
+opcões que vale a pena
+explorar:
+
+* Change Type
+* Save Branch as Scene
+
+A quarta chave está sendo
+instanciada com código.
+Para saber como, consulte
+o script do nó raiz desta
+cena."
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="Key1" parent="." instance=ExtResource( "1_8in1p" )]
+position = Vector2(24, 73)
+
+[node name="Key2" parent="." instance=ExtResource( "1_8in1p" )]
+position = Vector2(56, 73)
+velocidade = -1.5
+
+[node name="Key3" parent="." instance=ExtResource( "1_8in1p" )]
+position = Vector2(88, 73)
+velocidade = 4.0

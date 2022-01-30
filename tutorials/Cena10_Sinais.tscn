@@ -1,17 +1,17 @@
 [gd_scene load_steps=4 format=3 uid="uid://diqk8f61xux2r"]
 
-[ext_resource type="Texture2D" uid="uid://bya10ndctpscw" path="res://assets/rpg-urban/hero.png" id="1_rua73"]
-[ext_resource type="Script" path="res://src/Cena10_main.gd" id="1_wca62"]
-[ext_resource type="Script" path="res://src/Cena10_Hero.gd" id="3_j0ah4"]
+[ext_resource type="Script" path="res://src/Cena10_main.gd" id="1_p31fh"]
+[ext_resource type="Texture2D" uid="uid://bya10ndctpscw" path="res://assets/rpg-urban/hero.png" id="2_tggrf"]
+[ext_resource type="Script" path="res://src/Cena10_Hero.gd" id="3_t3qm7"]
 
 [node name="Cena10_Sinais" type="Node2D"]
-script = ExtResource( "1_wca62" )
+script = ExtResource( "1_p31fh" )
 
 [node name="Hero" type="Sprite2D" parent="."]
 texture_filter = 1
 position = Vector2(23, 58)
-texture = ExtResource( "1_rua73" )
-script = ExtResource( "3_j0ah4" )
+texture = ExtResource( "2_tggrf" )
+script = ExtResource( "3_t3qm7" )
 
 [node name="Label" type="Label" parent="."]
 offset_right = 203.0
@@ -55,3 +55,5 @@ text = "Clique aqui"
 __meta__ = {
 "_edit_use_anchors_": false
 }
+
+[connection signal="pressed" from="Button" to="." method="_on_button_pressed"]

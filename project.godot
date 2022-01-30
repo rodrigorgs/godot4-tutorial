@@ -11,7 +11,7 @@ config_version=5
 [application]
 
 config/name="godot4-tutorial"
-run/main_scene="res://scenes/Cena01_sprite.tscn"
+run/main_scene="res://tutorials/Cena01_sprite.tscn"
 config/icon="res://icon.png"
 config/features=PackedStringArray("4.0", "Vulkan Mobile")
 

@@ -1,25 +1,25 @@
 [gd_scene load_steps=5 format=3 uid="uid://diqk8f61xux2r"]
 
-[ext_resource type="Texture2D" uid="uid://bya10ndctpscw" path="res://assets/rpg-urban/hero.png" id="1_rua73"]
-[ext_resource type="Script" path="res://src/Cena08_Hero.gd" id="2_gm6jf"]
-[ext_resource type="Texture2D" uid="uid://bmffb7ivu2u82" path="res://assets/rpg-urban/friend.png" id="3_gwxii"]
-[ext_resource type="Texture2D" uid="uid://c45ossybxtb1" path="res://assets/pixelplataformer/key.png" id="4_dxdc3"]
+[ext_resource type="Texture2D" uid="uid://bya10ndctpscw" path="res://assets/rpg-urban/hero.png" id="1_tu242"]
+[ext_resource type="Script" path="res://src/Cena08_Hero.gd" id="2_t3p2f"]
+[ext_resource type="Texture2D" uid="uid://bmffb7ivu2u82" path="res://assets/rpg-urban/friend.png" id="3_q13hm"]
+[ext_resource type="Texture2D" uid="uid://c45ossybxtb1" path="res://assets/pixelplataformer/key.png" id="4_6clh5"]
 
 [node name="Cena08_GetNode" type="Node2D"]
 
 [node name="Hero" type="Sprite2D" parent="."]
 texture_filter = 1
 position = Vector2(23, 58)
-texture = ExtResource( "1_rua73" )
-script = ExtResource( "2_gm6jf" )
+texture = ExtResource( "1_tu242" )
+script = ExtResource( "2_t3p2f" )
 
 [node name="Friend" type="Sprite2D" parent="Hero"]
 position = Vector2(-10, 16)
-texture = ExtResource( "3_gwxii" )
+texture = ExtResource( "3_q13hm" )
 
 [node name="Key" type="Sprite2D" parent="Hero/Friend"]
 position = Vector2(15, 3)
-texture = ExtResource( "4_dxdc3" )
+texture = ExtResource( "4_6clh5" )
 
 [node name="Label" type="Label" parent="."]
 offset_right = 203.0

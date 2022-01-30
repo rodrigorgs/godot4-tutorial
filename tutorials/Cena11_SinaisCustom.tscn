@@ -1,17 +1,17 @@
 [gd_scene load_steps=4 format=3 uid="uid://diqk8f61xux2r"]
 
-[ext_resource type="Texture2D" uid="uid://bya10ndctpscw" path="res://assets/rpg-urban/hero.png" id="1_rua73"]
-[ext_resource type="Script" path="res://src/Cena11_main.gd" id="1_v2lt8"]
-[ext_resource type="Script" path="res://src/Cena11_Hero.gd" id="3_inypk"]
+[ext_resource type="Script" path="res://src/Cena11_main.gd" id="1_vsoos"]
+[ext_resource type="Texture2D" uid="uid://bya10ndctpscw" path="res://assets/rpg-urban/hero.png" id="2_7ec7p"]
+[ext_resource type="Script" path="res://src/Cena11_Hero.gd" id="3_v5pr7"]
 
 [node name="Cena11_SinaisCustom" type="Node2D"]
-script = ExtResource( "1_v2lt8" )
+script = ExtResource( "1_vsoos" )
 
 [node name="Hero" type="Sprite2D" parent="."]
 texture_filter = 1
 position = Vector2(23, 58)
-texture = ExtResource( "1_rua73" )
-script = ExtResource( "3_inypk" )
+texture = ExtResource( "2_7ec7p" )
+script = ExtResource( "3_v5pr7" )
 
 [node name="Label" type="Label" parent="."]
 offset_right = 203.0

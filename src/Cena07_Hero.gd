@@ -1,7 +1,6 @@
 extends Sprite2D
 
-@export_range(0, 100)
-var velocidade = 40
+var velocidade = 60
 
 func _process(delta):
 	var direcao = 0

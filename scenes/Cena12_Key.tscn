@@ -1,0 +1,8 @@
+[gd_scene load_steps=3 format=3 uid="uid://cnj6b7st1i0yn"]
+
+[ext_resource type="Texture2D" uid="uid://c45ossybxtb1" path="res://assets/pixelplataformer/key.png" id="1_qhnhc"]
+[ext_resource type="Script" path="res://scenes/Cena12_Key.gd" id="2_2in8b"]
+
+[node name="Key" type="Sprite2D"]
+texture = ExtResource( "1_qhnhc" )
+script = ExtResource( "2_2in8b" )

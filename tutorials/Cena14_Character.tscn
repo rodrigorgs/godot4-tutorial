@@ -1,0 +1,46 @@
+[gd_scene load_steps=6 format=3 uid="uid://ckqsixx5d6ldj"]
+
+[ext_resource type="Script" path="res://src/Cena14_Hero.gd" id="1_y33lb"]
+[ext_resource type="Texture2D" uid="uid://bya10ndctpscw" path="res://assets/rpg-urban/hero.png" id="2_g20dq"]
+[ext_resource type="Texture2D" uid="uid://c5g5tpgxks3c0" path="res://assets/pixelplataformer/circle.png" id="3_4s85k"]
+
+[sub_resource type="CircleShape2D" id="CircleShape2D_ttmeg"]
+radius = 7.0
+
+[sub_resource type="CircleShape2D" id="CircleShape2D_6eh5i"]
+radius = 8.06226
+
+[node name="Cena14_Character" type="Node2D"]
+
+[node name="Hero" type="CharacterBody2D" parent="."]
+texture_filter = 1
+position = Vector2(48, 59)
+motion_mode = 1
+script = ExtResource( "1_y33lb" )
+
+[node name="Sprite2D" type="Sprite2D" parent="Hero"]
+texture = ExtResource( "2_g20dq" )
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Hero"]
+position = Vector2(0, 1)
+shape = SubResource( "CircleShape2D_ttmeg" )
+
+[node name="Obstacle" type="CharacterBody2D" parent="."]
+texture_filter = 1
+position = Vector2(93, 71)
+
+[node name="Sprite2D" type="Sprite2D" parent="Obstacle"]
+texture = ExtResource( "3_4s85k" )
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Obstacle"]
+shape = SubResource( "CircleShape2D_6eh5i" )
+
+[node name="Label" type="Label" parent="."]
+offset_right = 40.0
+offset_bottom = 23.0
+theme_override_font_sizes/font_size = 12
+text = "Herói anda
+(teclas direcionais e Espaço)"
+__meta__ = {
+"_edit_use_anchors_": false
+}

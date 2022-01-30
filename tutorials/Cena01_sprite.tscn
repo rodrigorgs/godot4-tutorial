@@ -1,13 +1,13 @@
 [gd_scene load_steps=2 format=3 uid="uid://jrxqrvn62spc"]
 
-[ext_resource type="Texture2D" uid="uid://bya10ndctpscw" path="res://assets/rpg-urban/hero.png" id="1_efck3"]
+[ext_resource type="Texture2D" uid="uid://bya10ndctpscw" path="res://assets/rpg-urban/hero.png" id="1_iaao1"]
 
 [node name="Cena01_Sprite" type="Node2D"]
 
 [node name="Sprite2D" type="Sprite2D" parent="."]
 texture_filter = 1
 position = Vector2(79, 73)
-texture = ExtResource( "1_efck3" )
+texture = ExtResource( "1_iaao1" )
 
 [node name="Label" type="Label" parent="."]
 offset_right = 164.0
