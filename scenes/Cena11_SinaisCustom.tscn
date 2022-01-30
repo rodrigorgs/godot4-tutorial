@@ -1,0 +1,59 @@
+[gd_scene load_steps=4 format=3 uid="uid://diqk8f61xux2r"]
+
+[ext_resource type="Texture2D" uid="uid://bya10ndctpscw" path="res://assets/rpg-urban/hero.png" id="1_rua73"]
+[ext_resource type="Script" path="res://src/Cena11_main.gd" id="1_v2lt8"]
+[ext_resource type="Script" path="res://src/Cena11_Hero.gd" id="3_inypk"]
+
+[node name="Cena11_SinaisCustom" type="Node2D"]
+script = ExtResource( "1_v2lt8" )
+
+[node name="Hero" type="Sprite2D" parent="."]
+texture_filter = 1
+position = Vector2(23, 58)
+texture = ExtResource( "1_rua73" )
+script = ExtResource( "3_inypk" )
+
+[node name="Label" type="Label" parent="."]
+offset_right = 203.0
+offset_bottom = 528.0
+theme_override_font_sizes/font_size = 12
+text = "Mova para esquerda e
+direita
+
+
+
+Neste exemplo, o herói sinaliza
+quando ele se move, informando
+a direcão do movimento.
+
+Isso é feito com um sinal
+customizado, que chamamos de
+hero_moved.
+
+Por fim, conectamos o sinal
+hero_moved a um método que
+atualiza o texto na tela.
+
+Em termos de projeto de software,
+poderíamos fazer o herói atualizar
+o label diretamente, mas usar
+sinais é melhor, pois:
+
+* ... o herói não precisa obter uma
+referência para o label
+* ... se trocarmos o label por uma
+imagem, não é preciso modificar
+o código do herói"
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="DirectionLabel" type="Label" parent="."]
+offset_top = 72.0
+offset_right = 203.0
+offset_bottom = 600.0
+theme_override_font_sizes/font_size = 12
+text = "Direction: none"
+__meta__ = {
+"_edit_use_anchors_": false
+}

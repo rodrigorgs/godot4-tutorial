@@ -1,0 +1,57 @@
+[gd_scene load_steps=4 format=3 uid="uid://diqk8f61xux2r"]
+
+[ext_resource type="Texture2D" uid="uid://bya10ndctpscw" path="res://assets/rpg-urban/hero.png" id="1_rua73"]
+[ext_resource type="Script" path="res://src/Cena10_main.gd" id="1_wca62"]
+[ext_resource type="Script" path="res://src/Cena10_Hero.gd" id="3_j0ah4"]
+
+[node name="Cena10_Sinais" type="Node2D"]
+script = ExtResource( "1_wca62" )
+
+[node name="Hero" type="Sprite2D" parent="."]
+texture_filter = 1
+position = Vector2(23, 58)
+texture = ExtResource( "1_rua73" )
+script = ExtResource( "3_j0ah4" )
+
+[node name="Label" type="Label" parent="."]
+offset_right = 203.0
+offset_bottom = 528.0
+theme_override_font_sizes/font_size = 12
+text = "
+
+
+
+
+Sinais são úteis para comunicacão
+entre nós, sobretudo se um nó
+precisa passar informacões para
+um nó que não é seu descendente
+(filho, neto etc.)
+
+Alguns nós emitem sinais quando
+certos eventos acontecem, e você
+pode conectar os sinais a métodos,
+de forma que quando o evento
+ocorre, o método é chamado.
+
+Para conectar, use o método
+connect. Para desconectar,
+disconnect. Ou então use a aba
+Node do editor.
+
+Vale a pena estudar sobre formas
+de referenciar funcões. Veja
+a documentacão de Callable."
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="Button" type="Button" parent="."]
+offset_left = 3.0
+offset_top = 3.0
+offset_right = 95.0
+offset_bottom = 34.0
+text = "Clique aqui"
+__meta__ = {
+"_edit_use_anchors_": false
+}

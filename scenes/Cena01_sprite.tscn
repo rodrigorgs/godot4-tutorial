@@ -6,5 +6,17 @@
 
 [node name="Sprite2D" type="Sprite2D" parent="."]
 texture_filter = 1
-position = Vector2(21, 21)
+position = Vector2(79, 73)
 texture = ExtResource( "1_efck3" )
+
+[node name="Label" type="Label" parent="."]
+offset_right = 164.0
+offset_bottom = 160.0
+theme_override_font_sizes/font_size = 12
+text = "Este é um sprite: um objeto
+no jogo que consiste de uma
+imagem fixa, estática.
+"
+__meta__ = {
+"_edit_use_anchors_": false
+}

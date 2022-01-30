@@ -1,0 +1,24 @@
+[gd_scene format=3 uid="uid://gwfvwer8igrc"]
+
+[node name="Cena00_Orientacoes" type="CanvasLayer"]
+
+[node name="Label" type="Label" parent="."]
+offset_right = 40.0
+offset_bottom = 23.0
+text = "Primeiro configuramos o projeto, no menu
+Project > Configure Project...
+
+Neste projeto usamos as seguintes
+configuracões:
+
+    Display > Window > Viewport Width/Height: 160/90
+    ... > Initial Width/Height Override: 1280/720
+    ... > Stretch > Mode: canvas_items
+    Rendering > Textures > Canvas Textures > Default Texture Filter > Nearest
+
+A última opcão é para evitar o
+antialiasing quando as imagens
+são ampliadas."
+__meta__ = {
+"_edit_use_anchors_": false
+}
